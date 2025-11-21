@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lwandlebs Games Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      transition: background 0.5s;
+    }
+    header {
+      background: #1b1b2f;
+      color: #00ffea;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px #00ffea;
+    }
+    header h1 span {
+      color: #ff00ff;
+      font-size: 2.2em;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff00ff; }
+      to { text-shadow: 0 0 30px #ff00ff, 0 0 60px #ff00ff; }
+    }
+    nav {
+      background: #11111f;
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 0 10px #00ffea;
+    }
+    nav a {
+      color: #00ffea;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+    nav a:hover {
+      background: #ff00ff;
+      color: #111;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: rgba(20,20,30,0.95);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ffea;
+    }
+    .game-card {
+      border: 1px solid #00ffea;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: rgba(10,10,20,0.9);
+    }
+    .game-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffea;
+    }
+    .game-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid #ff00ff;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      background: #00ffea;
+      color: #111;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+    button:hover {
+      background: #ff00ff;
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1b1b2f;
+      color: #00ffea;
+      box-shadow: 0 -5px 20px #ff00ff;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      .container {
+        margin: 10px;
+        padding: 15px;
+      }
+      button {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>Lwandlebs</span> Games Portfolio</h1>
+    <p>Play, explore, and download my games!</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#games">My Games</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="home">
+    <h2>Welcome</h2>
+    <p>Hi! I'm Lwandle. This is my personal game portfolio where you can play my games directly in your browser or download them for your own device. Enjoy exploring the world of Lwandlebs Games!</p>
+  </div>
+
+  <div class="container" id="games">
+    <h2>My Games</h2>
+
+    <div class="game-card">
+      <h3>Game 1: Adventure Quest</h3>
+      <img src="images/game1-screenshot.jpg" alt="Adventure Quest Screenshot">
+      <p>An exciting HTML5 adventure game. Explore dungeons, solve puzzles, and defeat monsters!</p>
+      <a href="games/game1.html"><button>Play Online</button></a>
+      <a href="downloads/game1.zip"><button>Download</button></a>
+    </div>
+
+    <div class="game-card">
+      <h3>Game 2: Space Shooter</h3>
+      <img src="images/game2-screenshot.jpg" alt="Space Shooter Screenshot">
+      <p>A fast-paced shooter game in space. Upgrade your ship and defeat alien enemies!</p>
+      <a href="games/game2.html"><button>Play Online</button></a>
+      <a href="downloads/game2.zip"><button>Download</button></a>
+    </div>
+
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@lwandlebs.co.za</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lwandlebs Games. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
